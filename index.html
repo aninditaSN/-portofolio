@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Anindita Septian Ningrum</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Library untuk Animasi Slide -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Konfigurasi Warna Kustom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'burgundy-deep': '#4C0519',
+                        'pink-rose': '#DB2777',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Background Luar Mewah dengan Gradasi Deep Burgundy & Glamour Glow */
+        body {
+            background-color: #1a0209;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(219, 39, 119, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(131, 24, 67, 0.6) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(76, 5, 25, 0.9) 0%, #0d0104 100%);
+            color: #2D0C13;
+            font-family: 'Playfair Display', 'Segoe UI', serif;
+            overflow-x: hidden;
+        }
+
+        /* Kotak Dalam Terang/Cerah (Mewah & Elegan) */
+        .luxury-light-card {
+            background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 2px solid rgba(244, 114, 182, 0.5);
+            box-shadow: 0 25px 60px rgba(76, 5, 25, 0.5), 0 0 30px rgba(236, 72, 153, 0.3);
+        }
+
+        /* Efek Teks Berkilau */
+        .gold-shine {
+            background: linear-gradient(135deg, #831843 0%, #DB2777 50%, #581C87 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Animasi Kursor Mengetik */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="flex flex-col relative">
+
+    <!-- Efek Cahaya Mewah di Latar Belakang -->
+    <div class="absolute top-5 left-5 w-[32rem] h-[32rem] bg-pink-600/30 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-5 right-5 w-[35rem] h-[35rem] bg-burgundy-deep/50 rounded-full blur-[160px] pointer-events-none"></div>
+
+    <!-- ================= SLIDE 1: HERO SECTION ================= -->
+    <section class="min-h-screen w-full flex items-center justify-center p-4 relative">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="zoom-in" data-aos-duration="1250">
+            
+            <!-- Ikon Kupu-kupu Hiasan -->
+            <span class="absolute top-6 left-8 text-3xl animate-bounce">🦋</span>
+            <span class="absolute bottom-6 right-8 text-3xl animate-pulse">🦋</span>
+
+            <!-- NAVBAR KECIL DI DALAM SLIDE -->
+            <div class="flex justify-between items-center mb-10 border-b border-pink-300 pb-4">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md">
+                    SYSTEM INFORMATION
+                </span>
+                <div class="hidden md:flex space-x-8 text-sm font-sans font-semibold text-burgundy-deep">
+                    <a href="#about" class="hover:text-pink-rose transition">About</a>
+                    <a href="#experience" class="hover:text-pink-rose transition">Experience</a>
+                    <a href="#projects" class="hover:text-pink-rose transition">Projects</a>
+                    <a href="#skills" class="hover:text-pink-rose transition">Skills</a>
+                </div>
+            </div>
+
+            <!-- KONTEN UTAMA SLIDE 1 -->
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-8 text-center md:text-left space-y-5" data-aos="fade-right" data-aos-delay="300">
+                    <p class="text-pink-rose text-xs md:text-sm uppercase tracking-widest font-sans font-bold">
+                        System Analyst & Business Process Enthusiast
+                    </p>
+                    <h1 class="text-5xl md:text-7xl font-serif italic font-extrabold gold-shine tracking-wide">
+                        Portofolio
+                    </h1>
+                    <div class="inline-block bg-white/80 border border-pink-300 px-7 py-3 rounded-2xl shadow-lg mt-2">
+                        <h2 class="text-lg md:text-xl font-sans font-bold text-burgundy-deep">
+                            <span class="typing-cursor">Anindita Septian Ningrum, S.Kom</span>
+                        </h2>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-5 pt-4 text-xs font-sans font-medium text-gray-700">
+                        <span class="flex items-center gap-1 bg-white/60 px-3 py-1.5 rounded-lg shadow-sm">📍 Gresik, Jawa Timur</span>
+                        <span class="flex items-center gap-1 bg-white/60 px-3 py-1.5 rounded-lg shadow-sm">📞 082140867033</span>
+                        <span class="flex items-center gap-1 bg-white/60 px-3 py-1.5 rounded-lg shadow-sm">✉️ aninditaseptian04@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 flex justify-center" data-aos="fade-left" data-aos-delay="500">
+                    <div class="relative w-52 h-64 md:w-60 md:h-80 rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-burgundy-deep/40 bg-burgundy-deep/20">
+                        <img src="assets/foto-wisuda.jpg" alt="Anindita Septian Ningrum" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 2: ABOUT ME ================= -->
+    <section id="about" class="min-h-screen w-full flex items-center justify-center p-4 relative py-20">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="fade-up" data-aos-duration="1200">
+            
+            <div class="text-center mb-10">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md uppercase">
+                    Get to Know Me
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif italic font-extrabold gold-shine mt-3">
+                    Tentang Saya
+                </h2>
+            </div>
+
+            <!-- Grid 3 Kolom (Foto, Deskripsi Spesifik, Informasi Akademik) -->
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Kolom 1: Tempat Foto Kedua (4 Kolom) -->
+                <div class="md:col-span-4 flex justify-center" data-aos="fade-right" data-aos-delay="200">
+                    <div class="relative w-48 h-60 md:w-56 md:h-72 rounded-3xl overflow-hidden border-4 border-white shadow-xl shadow-burgundy-deep/30 bg-burgundy-deep/10">
+                        <!-- Foto About (Ganti nama file jika perlu) -->
+                        <img src="assets/foto-about.jpg" alt="About Anindita" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Kolom 2: Deskripsi Detail Spesifik (5 Kolom) -->
+                <div class="md:col-span-5 space-y-4 text-gray-800 font-sans" data-aos="fade-up" data-aos-delay="300">
+                    <p class="text-sm md:text-base leading-relaxed bg-white/70 p-4 rounded-2xl shadow-sm border border-pink-200">
+                        Saya <strong class="text-burgundy-deep">Anindita Septian Ningrum, S.Kom</strong>, lulusan Sistem Informasi dari <strong class="text-burgundy-deep">Universitas Trunodjoyo Madura</strong> yang memiliki ketertarikan pada bidang <strong class="text-burgundy-deep">System Analysis, Business Process Improvement, dan pengembangan sistem informasi</strong>.
+                    </p>
+                    <p class="text-xs md:text-sm leading-relaxed bg-white/70 p-4 rounded-2xl shadow-sm border border-pink-200">
+                        Memiliki keahlian dalam <strong class="text-burgundy-deep">Requirement Gathering, Pemodelan UML & BPMN</strong>, <strong class="text-burgundy-deep">perancangan database</strong>,serta penyusunan dokumentasi teknis seperti <strong class="text-burgundy-deep">Software Requirements Specification (SRS)</strong> dan <strong class="text-burgundy-deep">Manual Book</strong>. Memiliki pengalaman magang di PT Adaptiv Solusi Informatika dan PT PAL Indonesia, serta pengalaman dalam pengembangan dan pengujian aplikasi melalui proyek tugas akhir.
+                    </p>
+                </div>
+
+                <!-- Kolom 3: Informasi Akademik & Highlight (3 Kolom) -->
+                <div class="md:col-span-3 space-y-3" data-aos="fade-left" data-aos-delay="400">
+                    <div class="bg-white/80 border border-pink-300 p-5 rounded-2xl shadow-md space-y-3">
+                        <h3 class="text-base font-bold font-serif text-burgundy-deep border-b border-pink-200 pb-2">🎓Pendidikan</h3>
+                        
+                        <div class="text-xs font-sans text-gray-700 space-y-1">
+                            <p class="font-bold text-gray-900">S1 Sistem Informasi</p>
+                            <p class="text-gray-600">Univ. Trunojoyo Madura</p>
+                        </div>
+
+                        <div class="text-xs font-sans text-gray-700 space-y-1 pt-1 border-t border-pink-100">
+                            <p class="font-bold text-gray-900">⭐IPK</p>
+                            <p class="text-pink-rose font-semibold text-sm">3.50 / 4.00</p>
+                        </div>
+
+                        <div class="text-xs font-sans text-gray-700 space-y-1 pt-1 border-t border-pink-100">
+                            <p class="font-bold text-gray-900">Fokus Keahlian</p>
+                            <p class="text-gray-600">System Analyst</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 3: EXPERIENCE (PT PAL INDONESIA) ================= -->
+    <section id="experience-1" class="min-h-screen w-full flex items-center justify-center p-4 relative py-20">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="fade-up" data-aos-duration="1200">
+            
+            <div class="text-center mb-8">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md uppercase">
+                    Professional Experience
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif italic font-extrabold gold-shine mt-3">
+                    Pengalaman Magang (1/2)
+                </h2>
+            </div>
+
+            <!-- Detail Perusahaan & Jobdesk -->
+            <div class="bg-white/80 border border-pink-300 p-6 rounded-3xl shadow-lg mb-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-pink-200 pb-4 mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold font-serif text-burgundy-deep">IT Intern - PT PAL Indonesia</h3>
+                        <p class="text-sm text-pink-rose font-semibold">Januari - Februari 2024</p>
+                    </div>
+                    <span class="mt-2 md:mt-0 bg-burgundy-deep/10 text-burgundy-deep text-xs font-bold px-3 py-1 rounded-full border border-burgundy-deep/20">
+                        System Analysis & Database
+                    </span>
+                </div>
+                
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-800 font-sans leading-relaxed">
+                    <li>Menganalisis sistem internal untuk memahami alur proses bisnis dan kebutuhan pengguna sebagai dasar evaluasi dan peningkatan layanan TI.</li>
+                    <li>Mengidentifikasi proses bisnis serta menyusun dokumentasi kebutuhan sistem.</li>
+                    <li>Mengembangkan aplikasi desktop sederhana sebagai pendukung pengelolaan data peserta magang.</li>
+                    <li>Melakukan pengolahan data dan perancangan database untuk mendukung kebutuhan sistem.</li>
+                </ul>
+            </div>
+
+            <!-- Dokumentasi Foto (4 Foto Grid Menarik) -->
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-sm font-bold font-sans text-burgundy-deep mb-3 uppercase tracking-wider text-center">Dokumentasi Jobdesk di PT PAL Indonesia</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Foto 1 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/pal-1.png" alt="Dokumentasi PT PAL 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 1</div>
+                    </div>
+                    <!-- Foto 2 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/pal-2.png" alt="Dokumentasi PT PAL 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 2</div>
+                    </div>
+                    <!-- Foto 3 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/pal-3.png" alt="Dokumentasi PT PAL 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 3</div>
+                    </div>
+                    <!-- Foto 4 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/pal-4.png" alt="Dokumentasi PT PAL 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 4</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 4: EXPERIENCE (PT ADAPTIV SOLUSI INFORMATIKA) ================= -->
+    <section id="experience-2" class="min-h-screen w-full flex items-center justify-center p-4 relative py-20">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="fade-up" data-aos-duration="1200">
+            
+            <div class="text-center mb-8">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md uppercase">
+                    Professional Experience
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif italic font-extrabold gold-shine mt-3">
+                    Pengalaman Magang (2/2)
+                </h2>
+            </div>
+
+            <!-- Detail Perusahaan & Jobdesk -->
+            <div class="bg-white/80 border border-pink-300 p-6 rounded-3xl shadow-lg mb-8" data-aos="fade-right" data-aos-delay="200">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-pink-200 pb-4 mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold font-serif text-burgundy-deep">IT Intern - PT Adaptiv Solusi Informatika</h3>
+                        <p class="text-sm text-pink-rose font-semibold">April - Mei 2024</p>
+                    </div>
+                    <span class="mt-2 md:mt-0 bg-burgundy-deep/10 text-burgundy-deep text-xs font-bold px-3 py-1 rounded-full border border-burgundy-deep/20">
+                        SRS & System Documentation
+                    </span>
+                </div>
+                
+                <ul class="list-disc list-inside space-y-2 text-sm text-gray-800 font-sans leading-relaxed">
+                    <li>Melakukan analisis kebutuhan sistem dan mempelajari alur proses bisnis aplikasi Parahita berdasarkan fungsi dan peran pengguna.</li>
+                    <li>Menyusun <strong class="text-burgundy-deep">Software Requirements Specification (SRS)</strong> sebagai dokumentasi kebutuhan dan spesifikasi sistem.</li>
+                    <li>Menyusun <strong class="text-burgundy-deep">Manual Book</strong> sebagai panduan penggunaan aplikasi berdasarkan fitur dan alur kerja sistem.</li>
+                    <li>Membuat <strong class="text-burgundy-deep">User Access Matrix</strong> untuk mendokumentasikan hak akses dan kewenangan pengguna berdasarkan jabatan masing-masing.</li>
+                </ul>
+            </div>
+
+            <!-- Dokumentasi Foto (4 Foto Grid Menarik) -->
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-sm font-bold font-sans text-burgundy-deep mb-3 uppercase tracking-wider text-center">Dokumentasi Jobdesk di PT Adaptiv Solusi Informatika</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Foto 1 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/adaptiv-1.png" alt="Dokumentasi Adaptiv 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 1</div>
+                    </div>
+                    <!-- Foto 2 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/adaptiv-2.png" alt="Dokumentasi Adaptiv 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 2</div>
+                    </div>
+                    <!-- Foto 3 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group/ item relative">
+                        <img src="assets/adaptiv-3.png" alt="Dokumentasi Adaptiv 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 3</div>
+                    </div>
+                    <!-- Foto 4 -->
+                    <div class="h-36 md:h-44 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-burgundy-deep/10 group relative">
+                        <img src="assets/adaptiv-4.png" alt="Dokumentasi Adaptiv 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-1 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded">Foto 4</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 4.5: ORGANIZATION EXPERIENCE (BARU) ================= -->
+    <section id="organization" class="min-h-screen w-full flex items-center justify-center p-4 relative py-20">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="fade-up" data-aos-duration="1200">
+            
+            <!-- Judul Section -->
+            <div class="text-center mb-8">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md uppercase">
+                    Campus & Leadership
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif italic font-extrabold gold-shine mt-3">
+                    Pengalaman Organisasi
+                </h2>
+            </div>
+
+            <!-- Grid 3 Organisasi + Dokumentasi Foto -->
+            <div class="space-y-8">
+                
+                <!-- 1. BEM FT (Anggota Divisi Ekraf) -->
+                <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg" data-aos="fade-right" data-aos-delay="200">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-pink-200 pb-3 mb-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold font-serif text-burgundy-deep">BEM FT (Badan Eksekutif Mahasiswa FT)</h3>
+                            <p class="text-xs md:text-sm text-pink-rose font-semibold">Anggota Divisi Ekraf (Ekonomi Kreatif)</p>
+                        </div>
+                        <span class="mt-2 md:mt-0 bg-pink-100 border border-pink-300 text-burgundy-deep text-xs font-bold px-3 py-1 rounded-full">
+                            Mar 2023 - Jan 2024
+                        </span>
+                    </div>
+
+                    <!-- Galeri Foto Dokumentasi BEM FT (3 Foto Grid) -->
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/bem-1.jpg" alt="BEM FT 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Dokumentasi 1</span>
+                        </div>
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/bem-2.jpg" alt="BEM FT 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Dokumentasi 2</span>
+                        </div>
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/bem-3.jpg" alt="BEM FT 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Dokumentasi 3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. UKM FT Blue Murder (Divisi Tari) -->
+                <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg" data-aos="fade-left" data-aos-delay="300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-pink-200 pb-3 mb-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold font-serif text-burgundy-deep">UKM FT Blue Murder</h3>
+                            <p class="text-xs md:text-sm text-pink-rose font-semibold">Anggota Divisi Tari</p>
+                        </div>
+                        <span class="mt-2 md:mt-0 bg-pink-100 border border-pink-300 text-burgundy-deep text-xs font-bold px-3 py-1 rounded-full">
+                            Okt 2022 - Jun 2023
+                        </span>
+                    </div>
+
+                    <!-- Galeri Foto Dokumentasi UKM Tari (3 Foto Grid) -->
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/tari-1.jpg" alt="UKM Tari 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Penampilan 1</span>
+                        </div>
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/tari-2.jpg" alt="UKM Tari 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Penampilan 2</span>
+                        </div>
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/tari-3.jpg" alt="UKM Tari 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Dokumentasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Liaison Officer (LO) FT Pesona -->
+                <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg" data-aos="fade-right" data-aos-delay="400">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-pink-200 pb-3 mb-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold font-serif text-burgundy-deep">Kepanitiaan FT Pesona</h3>
+                            <p class="text-xs md:text-sm text-pink-rose font-semibold">Liaison Officer (LO)</p>
+                        </div>
+                        <span class="mt-2 md:mt-0 bg-pink-100 border border-pink-300 text-burgundy-deep text-xs font-bold px-3 py-1 rounded-full">
+                            Agu 2023 - Sep 2023
+                        </span>
+                    </div>
+
+                    <!-- Galeri Foto Dokumentasi LO FT Pesona (3 Foto Grid) -->
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/lo-1.jpg" alt="LO FT Pesona 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Kegiatan 1</span>
+                        </div>
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/lo-2.jpg" alt="LO FT Pesona 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Kegiatan 2</span>
+                        </div>
+                        <div class="h-28 md:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-sm bg-burgundy-deep/10 group relative">
+                            <img src="assets/lo-3.jpg" alt="LO FT Pesona 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-1 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded">Tim LO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 5: PROJECT PORTFOLIO ================= -->
+    <section id="projects" class="min-h-screen w-full flex items-center justify-center p-4 relative py-20">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="fade-up" data-aos-duration="1200">
+            
+            <!-- Judul Section -->
+            <div class="text-center mb-10">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md uppercase">
+                    Featured Project
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif italic font-extrabold gold-shine mt-3">
+                    Project Portofolio
+                </h2>
+            </div>
+
+            <!-- Konten Utama: Layout Asimetris (Kiri: Detail Teks, Kanan: Grid Foto Puzzle Estetik) -->
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Kolom Kiri: Detail Proyek & Metrik Pengujian (7 Kolom) -->
+                <div class="md:col-span-7 space-y-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg space-y-4">
+                        <div class="border-b border-pink-200 pb-3">
+                            <span class="bg-pink-rose/15 text-pink-rose text-[11px] font-bold px-3 py-1 rounded-full uppercase">Full Development & Testing</span>
+                            <h3 class="text-2xl font-bold font-serif text-burgundy-deep mt-2">E-Commerce Website UMKM Kue Tradisional</h3>
+                            <p class="text-xs text-gray-600 mt-1">GitHub: <a href="https://github.com/aninditaSN/ta-ecommerce" target="_blank" class="text-pink-rose underline font-semibold hover:text-burgundy-deep">github.com/aninditaSN/ta-ecommerce</a></p>
+                        </div>
+                        
+                        <!-- Poin Fitur -->
+                        <div class="text-xs md:text-sm text-gray-800 space-y-2 font-sans">
+                            <p class="font-bold text-burgundy-deep">✨ Fitur Utama Sistem:</p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Sistem e-commerce untuk pengelolaan produk, pemesanan, & laporan penjualan.</li>
+                                <li>Penerapan 8 tabel database relasional untuk konsistensi data.</li>
+                                <li>Dashboard monitoring & manajemen stok otomatis.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Metrik Hasil Pengujian (Badge Style) -->
+                        <div class="pt-2 border-t border-pink-200">
+                            <p class="font-bold text-burgundy-deep text-xs md:text-sm mb-2">📊 Hasil Pengujian (Testing):</p>
+                            <div class="grid grid-cols-3 gap-2 text-center">
+                                <div class="bg-pink-50 border border-pink-200 p-2 rounded-xl shadow-sm">
+                                    <p class="text-[10px] text-gray-500 font-semibold">Black-box</p>
+                                    <p class="text-xs font-bold text-burgundy-deep">34 Skenario (100%)</p>
+                                </div>
+                                <div class="bg-pink-50 border border-pink-200 p-2 rounded-xl shadow-sm">
+                                    <p class="text-[10px] text-gray-500 font-semibold">UAT Score</p>
+                                    <p class="text-xs font-bold text-pink-rose">89,14%</p>
+                                </div>
+                                <div class="bg-pink-50 border border-pink-200 p-2 rounded-xl shadow-sm">
+                                    <p class="text-[10px] text-gray-500 font-semibold">Response</p>
+                                    <p class="text-xs font-bold text-burgundy-deep">0,10-0,12s</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Galeri Foto Bergaya Puzzle / Collage (5 Kolom) -->
+                <div class="md:col-span-5 grid grid-cols-2 gap-3" data-aos="fade-left" data-aos-delay="400">
+                    <!-- Foto Utama (Agak Tinggi) -->
+                    <div class="col-span-2 h-40 rounded-2xl overflow-hidden border-2 border-white shadow-md relative group">
+                        <img src="assets/project-1.png" alt="Dashboard E-Commerce" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute bottom-2 left-3 text-white text-xs font-semibold">🖥️ Dashboard Monitoring Utama</span>
+                    </div>
+                    <!-- Foto Kecil Kiri -->
+                    <div class="h-28 rounded-2xl overflow-hidden border-2 border-white shadow-md relative group">
+                        <img src="assets/project-2.png" alt="Katalog Produk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute bottom-1 right-2 bg-black/70 text-white text-[10px] px-2 py-0.5 rounded">Katalog</span>
+                    </div>
+                    <!-- Foto Kecil Kanan -->
+                    <div class="h-28 rounded-2xl overflow-hidden border-2 border-white shadow-md relative group">
+                        <img src="assets/project-3.png" alt="Transaksi Sistem" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute bottom-1 right-2 bg-black/70 text-white text-[10px] px-2 py-0.5 rounded">Transaksi</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 6: SKILLS, CERTIFICATES & CONTACT ================= -->
+    <section id="skills" class="min-h-screen w-full flex items-center justify-center p-4 relative py-20">
+        <div class="w-full max-w-5xl luxury-light-card rounded-3xl p-8 md:p-12 relative z-10" data-aos="fade-up" data-aos-duration="1200">
+            
+            <!-- Judul Section -->
+            <div class="text-center mb-10">
+                <span class="bg-burgundy-deep text-pink-100 text-xs md:text-sm font-semibold px-5 py-2 rounded-full tracking-wider shadow-md uppercase">
+                    Expertise & Connect
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif italic font-extrabold gold-shine mt-3">
+                    Keahlian & Kontak
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 mb-10">
+                
+                <!-- Kolom Kiri: Keahlian (Ikon/Stiker Teknologi Visual) & Sertifikat (7 Kolom) -->
+                <div class="md:col-span-7 space-y-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg space-y-4">
+                        <h3 class="text-xl font-bold font-serif text-burgundy-deep border-b border-pink-200 pb-2">Technologies & Core Skills</h3>
+                        
+                        <!-- Stiker / Logo Teknologi Visual (Menggunakan Devicon/CDN) -->
+                        <div>
+                            <p class="text-xs font-bold text-gray-600 mb-3 uppercase tracking-wide">Tech Stack</p>
+                            <div class="flex flex-wrap gap-4 items-center">
+                                <!-- PHP -->
+                                <div class="flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-2 rounded-2xl shadow-sm">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-6 h-6">
+                                    <span class="text-xs font-bold text-gray-800">PHP</span>
+                                </div>
+                                <!-- JavaScript -->
+                                <div class="flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-2 rounded-2xl shadow-sm">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" class="w-6 h-6">
+                                    <span class="text-xs font-bold text-gray-800">JavaScript</span>
+                                </div>
+                                <!-- MySQL -->
+                                <div class="flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-2 rounded-2xl shadow-sm">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-6 h-6">
+                                    <span class="text-xs font-bold text-gray-800">MySQL</span>
+                                </div>
+                                <!-- CSS / Tailwind -->
+                                <div class="flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-2 rounded-2xl shadow-sm">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="w-6 h-6">
+                                    <span class="text-xs font-bold text-gray-800">Tailwind</span>
+                                </div>
+                                <!-- Git -->
+                                <div class="flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-2 rounded-2xl shadow-sm">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-6 h-6">
+                                    <span class="text-xs font-bold text-gray-800">Git</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Core Skills Analisis -->
+                        <div class="pt-3 border-t border-pink-200 text-xs md:text-sm text-gray-700 space-y-1">
+                            <p class="font-bold text-burgundy-deep">🎯 Core Focus & Tools:</p>
+                            <p>System Analysis, Requirement Gathering, UML & BPMN Modeling, Black-box & UAT Testing, Draw.io, Microsoft Office.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat -->
+                    <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg space-y-3">
+                        <h3 class="text-xl font-bold font-serif text-burgundy-deep border-b border-pink-200 pb-2">Sertifikasi & Pelatihan</h3>
+                        <ul class="space-y-2 text-xs md:text-sm text-gray-700 font-sans">
+                            <li>
+                                <a href="https://drive.google.com/file/d/1R5_ZGktZ_wDNWzn20Dy-iUmb8CW2fUr2/view?usp=sharing" target="_blank" class="flex items-center gap-2 hover:text-pink-rose transition group">
+                                    <span class="text-pink-rose group-hover:scale-110 transition">📄</span> 
+                                    <span class="underline font-medium">Internship Certificate - PT PAL Indonesia</span>
+                                    <span class="text-[10px] bg-pink-100 text-burgundy-deep px-2 py-0.5 rounded-full ml-auto">Lihat ↗</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/file/d/1jp_9IFOYs5gP4ClhMY-2XmwdOWjXlDB-/view?usp=sharing" target="_blank" class="flex items-center gap-2 hover:text-pink-rose transition group">
+                                    <span class="text-pink-rose group-hover:scale-110 transition">📄</span> 
+                                    <span class="underline font-medium">Microsoft Excel Training Certificate</span>
+                                    <span class="text-[10px] bg-pink-100 text-burgundy-deep px-2 py-0.5 rounded-full ml-auto">Lihat ↗</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/file/d/1FvTK3w-ezStycVCQZctd0GrU_ytZGUnj/view?usp=sharing" target="_blank" class="flex items-center gap-2 hover:text-pink-rose transition group">
+                                    <span class="text-pink-rose group-hover:scale-110 transition">📄</span> 
+                                    <span class="underline font-medium">TOEFL / TEAP Certificate</span>
+                                    <span class="text-[10px] bg-pink-100 text-burgundy-deep px-2 py-0.5 rounded-full ml-auto">Lihat ↗</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Foto Profil, Kontak & Footer (5 Kolom) -->
+                <div class="md:col-span-5 flex flex-col justify-between" data-aos="fade-left" data-aos-delay="400">
+                    <div class="bg-white/90 border border-pink-300 p-6 rounded-3xl shadow-lg space-y-4 h-full flex flex-col justify-between">
+                        
+                        <div class="space-y-4">
+                            <!-- Bingkai Foto Berjas Hitam (BG Merah) -->
+                            <div class="flex justify-center">
+                                <div class="w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden border-4 border-white shadow-md bg-burgundy-deep/20 relative group">
+                                    <img src="assets/foto-formal.jpeg" alt="Anindita Septian Ningrum" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                </div>
+                            </div>
+
+                            <h3 class="text-xl font-bold font-serif text-burgundy-deep border-b border-pink-200 pb-2 mb-4 text-center md:text-left">Hubungi Saya</h3>
+                            <div class="space-y-3 text-xs md:text-sm text-gray-700 font-sans">
+                                <p class="flex items-center gap-2 bg-pink-50 p-2.5 rounded-xl border border-pink-200">
+                                    <span>📞</span> <strong class="text-gray-900">082140867033</strong>
+                                </p>
+                                <p class="flex items-center gap-2 bg-pink-50 p-2.5 rounded-xl border border-pink-200">
+                                    <span>✉️</span> <strong class="text-gray-900 truncate">aninditaseptian04@gmail.com</strong>
+                                </p>
+                                <p class="flex items-center gap-2 bg-pink-50 p-2.5 rounded-xl border border-pink-200">
+                                    <span>🔗</span> <a href="https://linkedin.com/in/anindita-septian-ningrum-b87476401" target="_blank" class="text-pink-rose underline truncate">LinkedIn Profile</a>
+                                </p>
+                                <p class="flex items-center gap-2 bg-pink-50 p-2.5 rounded-xl border border-pink-200">
+                                    <span>🐙</span> <a href="https://github.com/aninditaSN" target="_blank" class="text-pink-rose underline truncate">GitHub Profile</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hak Cipta / Footer kecil -->
+                        <div class="pt-4 border-t border-pink-200 text-center text-[10px] text-gray-500 font-sans">
+                            © 2026 Anindita Septian Ningrum.
+                        </div>
+    </section>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+</body>
+</html>
